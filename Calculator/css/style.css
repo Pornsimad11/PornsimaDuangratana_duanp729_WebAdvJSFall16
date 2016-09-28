@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+#calculator {
+  width: 500px;
+  height: 500px;;
+  margin: 50px auto 0 auto;
+   background-repeat: no-repeat;
+  padding: 10px 10px 260px 10px;
+  border-radius: 5px;
+    left:31vw;
+   position: absolute;
+  z-index:100;
+
+
+}
+#pizza {
+/*  width: 800px;
+  height: 800px;;*/
+/*  margin: 50px auto 0 auto;*/
+   background-repeat: no-repeat;
+/*  padding: 10px 10px 260px 10px;*/
+  border-radius: 5px;
+  left:23vw;
+  position: absolute;
+    z-index:-100;
+
+
+}
+
+#meatball{
+	  background: url('../images/meatball.jpg');
+}
+
+#pepperoni{
+	  background: url('../images/pepperoni.jpg');
+}
+#parmaham{
+	  background: url('../images/parmaham.png');
+}
+#salmon{
+	  background: url('../images/salmon.png');
+}
+#chicken{
+	  background: url('../images/chicken.png');
+}
+#pineapple{
+	  background: url('../images/pineapple.png');
+}
+#olive{
+	  background: url('../images/olive.png');
+}
+#onion{
+	  background: url('../images/onion.png');
+}
+#tomato{
+	  background: url('../images/tomato.png');
+}
+#mushroom{
+	  background: url('../images/mushroom.png');
+}
+#cheese{
+	  background: url('../images/cheese.png');
+}
+#bacon{
+	  background: url('../images/bacon.png');
+}
+.result {
+  width: 410px;
+  height: 70px;
+  line-height: 40px;
+  background-color: #3E4651;
+  color: #fff;
+  margin: 5px;
+    border-radius: 5px;
+  margin-top: 80px;
+
+}
+
+.result > p {
+  margin-left: 10px;
+}
+
+.clear, span {
+  height: 168px;
+  border-bottom: 3px solid grey;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  margin: 5px;
+} 
+
+.clear {
+  width: 95px;
+  float: left;
+  background-color: #c0392b;
+  color: #fff;
+    border-color: #A63125;
+}
+
+  .clear:hover {
+    background-color: #D6523C;
+  }
+
+span {
+  float: left;
+  width: 95px;
+  height:80px;
+}
+
+  span:hover {
+    background-color: #D4D4D4;
+  } 
