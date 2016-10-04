@@ -1,3 +1,4 @@
+//credits http://www.netinstructions.com/simple-web-scraping-with-node-js-and-javascript/
 var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
