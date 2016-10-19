@@ -1,0 +1,137 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url('images/Diary_background.png') no-repeat, #EAB575;
+  border:0px;
+  margin:0px;
+  width:100%;
+  height:100%;
+}
+
+#home_diary{ 
+  background: url('images/Diary.png') no-repeat;
+  height:600px;
+  width:600px;
+  z-index:90;
+  padding-top: 85px;
+	position:fixed;
+	left: 50%;
+    transform: translate(-50%, 0);
+ }
+#container{
+	position:fixed;
+	text-align:center;
+	left: 52%;
+    transform: translate(-50%, 0);
+    height:500px;
+}
+form{
+	position:fixed;
+	text-align:center;
+	left: 50%;
+    transform: translate(-50%, 0);
+    height:500px;
+    padding-bottom: 8px;
+}
+
+#project_title{
+	font-family: 'Fredericka the Great', cursive;
+	font-size:47px;
+	color:#FFFFFF;
+	z-index:100;
+	padding-bottom: 117px;
+	text-align: center;
+}
+
+#Open{
+	font-family: 'Fredericka the Great', cursive;
+	font-size:17px;
+	color:#F4EF84;
+	text-decoration: none;
+	 z-index:100;
+}
+
+ #Read{
+ 	font-family: 'Fredericka the Great', cursive;
+	font-size:18px;
+	color:#FFFFFF;
+	z-index:100;
+	padding-top: 87px;
+	text-align: center;
+ }
+
+ #unlock_diary{
+  background: url('images/Signin.png') no-repeat;
+  height:600px;
+  width:600px;
+  z-index:90;
+  padding-top: 220px;
+  margin-top: 100px;
+	position:fixed;
+	left: 50%;
+    transform: translate(-50%, 0);
+ }
+
+
+input{
+	text-align: center;
+	padding:5px;
+	border:0px;
+	border-radius:2px;
+	width:200px;
+}
+button{
+	margin-bottom: 10px;
+	text-align: center;
+	padding:5px;
+	color:#F4EF84;
+	background: #6D3D29;
+	border:0px;
+	border-radius:2px;
+	width:150px;
+}
+#form_link{
+	text-decoration: none;
+	color:#F4EF84;
+
+}
+
+.lead{
+		color:#FFFFFF;
+}
+
+#open_diary{
+  background: url('images/Open_diary.png') no-repeat;
+  height:600px;
+  width:900px;
+  z-index:90;
+  padding-top: 61px;
+  margin-top: 48px;
+	position:fixed;
+	left: 55%;
+    transform: translate(-50%, 0);
+    padding-left: 150px;
+ }
+
+#left_col {
+	line-height:24px;
+   float:left;
+   width:250px;
+     z-index:100;
+     padding-right: 100px;
+}
+#right_col {
+	line-height:24px;
+   float:right;
+   width:250px;
+     z-index:100;
+
+}
+.form-control-static{
+	z-index: 100;
+}
+#End{
+	color:#7C482F;
+
+}
+
