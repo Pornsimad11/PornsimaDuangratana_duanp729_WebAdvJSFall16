@@ -1,0 +1,165 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#p5_loading{
+  color:transparent;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Chat page */
+/* First we hide the chat window, and show the login page*/
+.chat.page {
+  display: none;
+  position: fixed;
+}
+
+/* Pages */
+.pages {
+  position:fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+.title{
+font-family: 'Kumar One Outline', cursive;
+
+}
+
+/* Login Page */
+.login.page {
+  background-color: white;
+}
+
+.frame {
+  height:100%;
+   border-top: 70px solid black;
+   border-bottom: 70px solid black;
+   border-left: 70px solid black;
+   border-right: 70px solid black;
+  /*  background: yellow;*/
+    background-clip: content-box;;
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .frame {
+        border:0px;
+    }
+}
+.login.page .form {
+  height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+}
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+
+}
+.login.page .title {
+  font-size: 300%;
+}
+.login.page .usernameInput {
+  font-size: 120%;
+  letter-spacing: 3px;
+}
+.login.page .title, .login.page .usernameInput {
+  color: black;
+  font-weight: 100;
+}
+
+/* Font */
+.messages {
+  font-size: 500%;
+  overflow:  visible | hidden | scroll | auto | inherit;
+}
+.inputMessage {
+  font-size: 100%;
+}
+.log {
+  color: black;
+  font-size: 100%;
+  margin: 5px;
+  text-align: center;
+font-family: 'Kumar One Outline', cursive;
+line-height: 1;
+
+}
+
+
+/* Messages */
+.chatArea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow:  visible | hidden | scroll | auto | inherit;
+  padding: 10px 20px 10px 20px;
+}
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.instructions{
+  color:black;
+  z-index:100;
+  font-size:17px;
+  padding-top: 80px;
+}

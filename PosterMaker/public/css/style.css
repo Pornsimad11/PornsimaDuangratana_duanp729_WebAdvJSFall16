@@ -1,0 +1,363 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#p5_loading{
+  color:transparent;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Chat page */
+/* First we hide the chat window, and show the login page*/
+.chat.page {
+  display: none;
+  position: fixed;
+}
+
+/* Pages */
+.pages {
+  position:fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+/* Login Page */
+.login.page {
+  background-color: #333;
+}
+
+.frame {
+  height:100%;
+   border-top: 70px solid #333;
+   border-bottom: 70px solid #333;
+   border-left: 70px solid #333;
+   border-right: 70px solid #333;
+  /*  background: yellow;*/
+    background-clip: content-box;;
+
+}
+.login.page .form {
+  height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+
+}
+.login.page .title {
+  font-size: 200%;
+}
+.login.page .usernameInput {
+  font-size: 120%;
+  letter-spacing: 3px;
+}
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Font */
+.messages {
+  font-size: 500%;
+  overflow:  visible | hidden | scroll | auto | inherit;
+}
+.inputMessage {
+  font-size: 100%;
+}
+.log {
+  color: white;
+  font-size: 100%;
+  margin: 5px;
+  text-align: center;
+font-family: 'Satisfy', cursive;
+}
+
+
+/* Messages */
+.chatArea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.messages {
+  height: 100%;
+  margin: 0;
+  overflow:  visible | hidden | scroll | auto | inherit;
+  padding: 10px 20px 10px 20px;
+}
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  top: 40%;                         
+   transform: translate(0, -50%);
+   text-align: center;
+}
+
+.bg-img{
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+
+}
+.mySlides.fade{
+   position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index:-1;
+}
+
+.mySlides.fade img{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index:-1;
+}
+
+/* Caption text */
+.Poster1maker-title {
+  color: white;
+  font-size: 700%;
+  z-index: 100;
+  font-family: 'Satisfy', cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  padding-top: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  line-height: 1;
+}
+
+.Poster2maker-title {
+  color: black;
+  font-size: 600%;
+  z-index: 100;
+  font-family: 'Kumar One Outline', cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  padding-top: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  line-height: 1;
+}
+
+.Poster3maker-title {
+  color: black;
+  font-size: 700%;
+  z-index: 100;
+  font-family: 'Finger Paint', cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  padding-top: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  line-height: 1;
+}
+
+.Poster4maker-title {
+  color: #FFB3F1;
+  font-size: 700%;
+  z-index: 100;
+  font-family: 'Mr Bedfort', cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  padding-top: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  line-height: 1;
+}
+
+.Poster5maker-title {
+  color: #0000FF;
+  font-size: 600%;
+  z-index: 100;
+  font-family: 'Bungee', cursive;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  padding-top: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  line-height: 1;
+}
+
+.side-text{
+color: gray;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: 10px;
+  z-index: 100;
+  padding-top: 80px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+
+
+.side-text-container{
+height:100%;
+width:18px; 
+float: left;
+margin-top: 90px;
+ }
+
+ .continue-container{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #F9FF00;
+  text-align: center;
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+  z-index: 100;
+  text-align: center;
+}
+
+
+.continue{
+height:100%;
+
+ }
+
+
+.dot-container{ 
+width:18px;
+float: right;
+margin-right:20px;
+
+ }
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 100;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+  z-index: 100;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
